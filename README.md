@@ -9,6 +9,8 @@
 - JupyterLab
   - 3.3.4
 
+## Sagemkaer Studio を起動
+
 ## ターミナルを起動
 
 `File -> New -> Terminal` からターミナルを起動します。
