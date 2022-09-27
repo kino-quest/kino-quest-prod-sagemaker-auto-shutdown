@@ -51,7 +51,9 @@ cd kino-quest-prod-sagemaker-auto-shutdown
 
 ```bash
 cp ./on-jupyter-server-start.sh ../
+cp ./check_idle_timeout_configuration.py ../
 cd ..
+chmod 557 ./on-jupyter-server-start.sh
 ./on-jupyter-server-start.sh
 ```
 
@@ -72,3 +74,22 @@ conda activate studio
 
 なお、タイムアウト時間は60分に設定していますが、このスクリプトを修正して再度このコマンドを実行することで
 タイムアウト時間の再設定が可能です。
+
+
+## 設定されているかどうかの確認
+
+以下のコマンドをコピペして実行します。
+
+```bash
+python check_idle_timeout_configuration.py 
+```
+
+実行すると次のように表示されます。
+
+```bash
+sagemaker-user@studio$ python check_idle_timeout_configuration.py 
+<Response [200]>
+{'idle_time': 3600, 'keep_terminals': False, 'count': 7}
+```
+
+これで設定は以上になります。
