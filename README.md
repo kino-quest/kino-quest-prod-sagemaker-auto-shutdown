@@ -103,3 +103,37 @@ python check_idle_timeout_configuration.py
 ```
 
 これで設定は以上になります。
+
+## 切り戻し手順
+
+ここから先はうまくいかなかった時のリセット手順です。
+
+### カレントディレクトリの確認
+
+以下のコマンドをコピペして実行します。
+
+```bash
+pwd
+```
+
+実行すると次のように実行結果が表示されます。
+
+```bash
+(studio) sagemaker-user@studio$ pwd
+/home/sagemaker-user
+(studio) sagemaker-user@studio$
+```
+
+カレントディレクトリが`/home/sagemaker-user`であることを確認します。
+
+### ディレクトリの削除
+
+以下のコマンドをコピペして実行します。
+
+```bash
+rm -rf .auto-shutdown
+rm -rf check_idle_timeout_configuration.py
+rm -rf on-jupyter-server-start.sh
+```
+
+これでインストール前の状態に戻りました。
