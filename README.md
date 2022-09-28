@@ -89,9 +89,11 @@ Succeeded, idle timeout set to 180 minutes
 (studio) sagemaker-user@studio$
 ```
 
-なお、タイムアウト時間は60分に設定していますが、このスクリプトを修正して再度このコマンドを実行することで
+なお、デフォルトのタイムアウト時間は180分に設定していますが、この`set-time-interval.sh`を修正して再度このコマンドを実行することで
 タイムアウト時間（秒単位）の再設定が可能です。
 
+`set-time-interval.sh`は`on-jupyter-server-start.sh`によって自動で作成されるファイルです。
+一時的にタイムアウト時間を変更する場合は`set-time-interval.sh`の`TIMEOUT`変数を修正するようにしてください。
 
 ## 設定されているかどうかの確認
 
