@@ -75,9 +75,10 @@ conda activate studio
 実行すると次のように実行結果が表示されます。
 
 ```bash
+sagemaker-user@studio$ conda activate studio
 (studio) sagemaker-user@studio$ ./.auto-shutdown/set-time-interval.sh
-Succeeded, idle timeout set to 60 minutes
-(studio) sagemaker-user@studio$ 
+Succeeded, idle timeout set to 180 minutes
+(studio) sagemaker-user@studio$
 ```
 
 なお、タイムアウト時間は60分に設定していますが、このスクリプトを修正して再度このコマンドを実行することで
@@ -95,9 +96,10 @@ python check_idle_timeout_configuration.py
 実行すると次のように実行結果が表示されます。
 
 ```bash
-sagemaker-user@studio$ python check_idle_timeout_configuration.py 
+(studio) sagemaker-user@studio$ python check_idle_timeout_configuration.py 
 <Response [200]>
-{'idle_time': 3600, 'keep_terminals': False, 'count': 7}
+{'idle_time': 10800, 'keep_terminals': False, 'count': 10}
+(studio) sagemaker-user@studio$
 ```
 
 これで設定は以上になります。
