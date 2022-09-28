@@ -8,6 +8,14 @@
   - 0.1.5
 - JupyterLab
   - 3.3.4
+## 参考資料
+
+- [自動シャットダウン拡張機能を利用した Amazon SageMaker Studio のコスト削減方法](https://aws.amazon.com/jp/blogs/news/save-costs-by-automatically-shutting-down-idle-resources-within-amazon-sagemaker-studio/)
+  - AWS公式の資料
+- [Sagemaker-Studio-Autoshutdown-Extension](https://github.com/aws-samples/sagemaker-studio-auto-shutdown-extension)
+  - 導入する拡張機能のGitHub リポジトリ
+- [JupyterLab extensions](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html)
+  - JupyterLab 公式
 
 ## Sagemkaer Studio を起動
 
