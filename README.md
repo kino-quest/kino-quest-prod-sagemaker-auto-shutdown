@@ -7,7 +7,7 @@
 - sagemaker_studio_autoshutdown
   - 0.1.5
 - JupyterLab
-  - 3.3.4
+  - 3.6.1
 ## 参考資料
 
 - [自動シャットダウン拡張機能を利用した Amazon SageMaker Studio のコスト削減方法](https://aws.amazon.com/jp/blogs/news/save-costs-by-automatically-shutting-down-idle-resources-within-amazon-sagemaker-studio/)
@@ -39,7 +39,7 @@ conda activate studio
 jupyter lab --version
 ```
 
-バージョンが`3.3.4`であることを確認します。
+バージョンが`3.6.1`であることを確認します。
 
 ## GitHub からリポジトリを取得
 
@@ -108,7 +108,7 @@ python check_idle_timeout_configuration.py
 ```bash
 (studio) sagemaker-user@studio$ python check_idle_timeout_configuration.py 
 <Response [200]>
-{'idle_time': 10800, 'keep_terminals': False, 'count': 10}
+{'idle_time': 10800, 'keep_terminals': False, 'count': 6}
 (studio) sagemaker-user@studio$
 ```
 
